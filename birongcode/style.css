@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media(max-width: 480px) {
+    header{
+        background-color: #fff;
+        z-index: 99999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: 2px solid #b7b7b7;
+    }
+
+    .navbar{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .navbar img{
+        max-width: 110px;
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    /* .navbar ul li{
+        list-style: none;
+        padding: 0 10px;
+    } */
+
+    /* .navbar ul{
+        gap: 60px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    } */
+
+    /* .navbar ul li a:hover{
+        color: aqua;
+    } */
+
+    .hamburger{
+        display: block;
+        margin-right: 15px;
+        /* cursor: pointer; */
+        position: relative;
+        /* z-index: 10; */
+    }
+
+    .hamburger .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        /* transform: all .3s ease-in-out; */
+        background-color: #000;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar ul{
+        position: fixed;
+        right: -100%;
+        top: 61px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #b7b7b7;
+        width: 90%;
+        text-align: center;
+        transition: .8s;
+    }
+
+    .navbar ul li{
+        margin: 15px 0;
+        list-style: none;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #000 ;
+        font-family: 'geomanist', sans-serif;
+    }
+
+    .navbar h2 a{
+        color: #000;
+        margin-left: -100px;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-family: 'Teko', sans-serif;
+        font-family: 'Viga', sans-serif;
+    }
+
+    .navbar ul.active{
+        right: 20px;
+        border-radius: 15px;
+        background-color: #ebebeb;
+    }
+
+    .content{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8em;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .content .name h1{
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-family: 'Teko', sans-serif;
+        font-family: 'Viga', sans-serif;
+        color: #000;
+        letter-spacing: .06em;
+    }
+
+    .content .hair{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .content .bio{
+        margin-top: 20px;
+        font-family: 'geomanist', sans-serif;
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    .content .bio .full{
+        margin-top: 30px;
+    }
+
+    .content .bio .full a{
+        color: #517a9e;
+    }
+
+    .footer{
+        background-color: #ebebeb;
+        width: 100%;
+        font-family: 'geomanist', sans-serif;
+    }
+
+    .contact{
+        padding: 15px 20px;
+        background-color: #ebebeb;
+    }
+
+    .contact h2{
+        color: #000;
+    }
+
+    .sub-contact{
+        padding: 0 20px;
+        background-color: #ebebeb;
+        margin-bottom: 30px;
+    }
+
+    .sub-contact ul{
+        list-style: none;
+    }
+
+    .sub-contact ul li{
+        margin-bottom: 5px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .sub-contact ul li a{
+        color: #000;
+        text-decoration: none;
+        letter-spacing: .1em;
+        margin-bottom: 10px;
+    }
+
+    .wrap-sub{
+        background-color: #323232;
+    }
+
+    .sub-footer{
+        text-align: center;
+        background-color: #323232;
+        margin-top: 10px;
+    }
+
+    .sub-footer h2{
+        color: #fff;
+        padding-top: 20px;
+    }
+
+    .sub-footer ul li{
+        display: inline-block;
+        font-size: 20px;
+        margin: 6px;
+    }
+
+    .sub-footer ul li a{
+        color: #fff;
+    }
+
+    .sub-sub-footer{
+        color: #fff;
+        background-color: #323232;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .sub-sub-footer p{
+        padding: 20px 0;
+    }
+}
